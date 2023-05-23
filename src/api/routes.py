@@ -29,7 +29,7 @@ def user_login():
     access_token= create_access_token(identity=user.id)
 
     #Retornar el token
-    return jsonify({"accessToken": access_token}})
+    return jsonify({"accessToken": access_token})
 
 
 
@@ -62,8 +62,7 @@ def hello_protected_get():
         "message": "Hello protected route"
 
     })
-    return
-
+   
 
 
 
